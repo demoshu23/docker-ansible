@@ -72,7 +72,7 @@ pipeline{
         }
         stage('Docker Build'){
             steps{
-                sh "docker build -t docker build -t shu1demo/adhodoc:0.0.1 ."
+                sh "docker build -t shu1demo/adhodoc:0.0.1 ."
             }
         }
     }
