@@ -69,11 +69,11 @@ pipeline{
         }
         stage('Docker Build'){
             steps{
-                sh "docker build -t shu84/adhodoc:"
+                sh "docker build -t shu84/adhodoc:0.0.1 ."
             }
         }
     }
-
+}
     def getVersion(){
     def commitHash = sh label: '', returnStdout: true, script: 'git rev-parse --short HEAD'
     return commitHash
