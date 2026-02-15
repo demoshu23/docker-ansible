@@ -21,17 +21,20 @@
         
 //         stage('Docker Build'){
 //             steps{
-//                 sh "docker build . -t shu84/ansdoc:${DOCKER_TAG} "
+//                 sh "docker build . -t docker build -t shu84/adhodoc:0.0.1 .
+sshu1demo/ansdoc:${DOCKER_TAG} "
 //             }
 //         }
         
 //         stage('DockerHub Push'){
 //             steps{
 //                 withCredentials([string(credentialsId: 'docker-hub', variable: 'dockerHubPwd')]) {
-//                     sh "docker login -u shu84 -p ${dockerHubPwd}"
+//                     sh "docker login -u docker build -t shu84/adhodoc:0.0.1 .
+sshu1demo -p ${dockerHubPwd}"
 //                 }
                 
-//                 sh "docker push shu84/ansdoc:${DOCKER_TAG} "
+//                 sh "docker push docker build -t shu84/adhodoc:0.0.1 .
+sshu1demo/ansdoc:${DOCKER_TAG} "
 //             }
 //         }
         
@@ -64,12 +67,12 @@ pipeline{
         
         stage('Maven Build'){
             steps{
-                sh "mvn clean package"
+                sh "mvn clean package
             }
         }
         stage('Docker Build'){
             steps{
-                sh "docker build -t shu84/adhodoc:0.0.1 ."
+                sh "docker build -t docker build -t shu1demo/adhodoc:0.0.1 ."
             }
         }
     }
