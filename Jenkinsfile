@@ -52,7 +52,6 @@ pipeline{
     tools {
       maven 'maven-3'
     }
-    }
     stages{
         stage('SCM'){
             steps{
@@ -66,3 +65,4 @@ pipeline{
             }
         }
     }
+}
